@@ -1,9 +1,9 @@
 local usernames = {
     "kermieiacobus86",
-    "wavelammi11",
-    "181784jayne",
-    "284042arther",
-    "bonsellupo",
+    "",
+    "",
+    "",
+    "",
     "",
     "",
     "",
@@ -25,7 +25,7 @@ getgenv().Settings = {
         ["Usernames"] = usernames, -- Danh sách 10 người dùng
         ["Keep Best Pets"] = true,
         ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
-        ["Difficulty"] = "Above 100k"
+        ["Difficulty"] = "Above 7m"
     }
 }
 
