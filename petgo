@@ -1,20 +1,32 @@
+local usernames = {
+    "kermieiacobus86",
+    "wavelammi11",
+    "181784jayne",
+    "284042arther",
+    "bonsellupo",
+    "",
+    "",
+    "",
+    "",
+    ""
+}
+
 getgenv().Settings = {
     FPSLimit = 3,
     UseEventEggs = false,
 
     Notifications = {
         ["Webhook"] = "https://discordapp.com/api/webhooks/1301397086226616340/3UzL8ANoQjtjH55mDqMDjuOiDkUvgaAONVCDT692wLzakKdji0HJbJC_oGhc5KgKqdqp",
-        ["Discord ID"] = "844977783083368518",
+        ["Discord ID"] = "",
         ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
         ["Difficulty"] = "Above 50m",
-        --// It will send based off Rarity OR Difficulty, so please change to your liking.
     },
     Mailing = {
-        ["Usernames"] = {""}, --// Random chance to send to any.
+        ["Usernames"] = usernames, -- Danh sách 10 người dùng
         ["Keep Best Pets"] = true,
         ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
         ["Difficulty"] = "Above 100k"
-        --// It will send based off Rarity OR Difficulty, so please change to your liking.
     }
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c23a15c8e78a4758f38.lua"))()
