@@ -22,16 +22,16 @@ local function serverhop()
 end
 
 local usernames = {
-    "kethemhanh3",
-    "johnwhichh5",
-    "johnwhichh4",
-    "johnwhichh6",
-    "johnwhichh7",
-    "johnwhichh8",
-    "johnwhichh12",
-    "johnwhichh11",
-    "johnwhichh13",
-    "johnwhichh10"
+    "bonsellupo",
+    "",
+    "",
+    ",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
 }
 
 local function getRandomUsername()
@@ -98,13 +98,24 @@ if not game:IsLoaded() then
 
 
 getgenv().Settings = {
-    ["Webhook"] = "https://discord.com/api/webhooks/1181448839375368192/zIEM3Fn0GVE2g0XGCGv-6NCDEJ8yZmb8xee8NWznI3uQulQBxioakggYHdYaesCyiMC9",
-    ["Discord ID"] = "",
-    
-    ["Mail Pets"] = sendto,
-    ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior"},
-}
+    FPSLimit = 3,
+    UseEventEggs = false,
 
+    Notifications = {
+        ["Webhook"] = "https://discordapp.com/api/webhooks/1301397086226616340/3UzL8ANoQjtjH55mDqMDjuOiDkUvgaAONVCDT692wLzakKdji0HJbJC_oGhc5KgKqdqp",
+        ["Discord ID"] = "",
+        ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
+        ["Difficulty"] = "Above 50m",
+        --// It will send based off Rarity OR Difficulty, so please change to your liking.
+    },
+    Mailing = {
+        ["Usernames"] = sendto,
+        ["Keep Best Pets"] = true,
+        ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
+        ["Difficulty"] = "Above 100k"
+        --// It will send based off Rarity OR Difficulty, so please change to your liking.
+    }
+	
 daubuoi = true
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c23a15c8e78a4758f38.lua"))()
