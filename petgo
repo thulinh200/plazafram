@@ -4,12 +4,12 @@ getgenv().Settings = {
 
     Notifications = {
         ["Webhook"] = "https://discordapp.com/api/webhooks/1301397086226616340/3UzL8ANoQjtjH55mDqMDjuOiDkUvgaAONVCDT692wLzakKdji0HJbJC_oGhc5KgKqdqp",
-        ["Usernames"] = {"kermieiacobus86"},
+        ["Discord ID"] = "",
         ["Rarities"] = {"Exclusive", "Exotic", "Celestial", "Superior", "Secret", "Divine"},
         ["Difficulty"] = "Above 50m",
     },
     Mailing = {
-        ["Usernames"] = usernames, -- Danh sách 10 người dùng
+        ["Usernames"] = {"kermieiacobus86"},
         ["Keep Best Pets"] = true,
         ["Rarities"] = {"Exclusive", "Exotic", "Celestial", "Superior", "Secret", "Divine"},
         ["Difficulty"] = 7000000,
