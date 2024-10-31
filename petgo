@@ -25,7 +25,7 @@ getgenv().Settings = {
         ["Usernames"] = usernames, -- Danh sách 10 người dùng
         ["Keep Best Pets"] = true,
         ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
-        ["Difficulty"] = "Above 7m"
+        ["Difficulty"] = 7000000,
     }
 }
 
