@@ -4,7 +4,7 @@ getgenv().Settings = {
 
     Notifications = {
         ["Webhook"] = "https://discordapp.com/api/webhooks/1301397086226616340/3UzL8ANoQjtjH55mDqMDjuOiDkUvgaAONVCDT692wLzakKdji0HJbJC_oGhc5KgKqdqp",
-        ["Discord ID"] = "",
+        ["Discord ID"] = "844977783083368518",
         ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
         ["Difficulty"] = "Above 50m",
         --// It will send based off Rarity OR Difficulty, so please change to your liking.
